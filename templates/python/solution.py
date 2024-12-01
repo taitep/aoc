@@ -2,7 +2,7 @@ from sys import argv
 from parse import parse_file
 
 
-def solution(input):
+def solution(input) -> int:
     pass
 
 

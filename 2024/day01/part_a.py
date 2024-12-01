@@ -2,7 +2,9 @@ from sys import argv
 
 
 def solution(input: list[str]) -> int:
-    pass
+    split = [tuple(map(int, i.split("   "))) for i in input]
+    a, b = tuple(map(sorted, zip(*split)))
+    return sum((abs(a - b) for a, b in zip(a, b)))
 
 
 def main(filename: str):
